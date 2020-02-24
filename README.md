@@ -5,6 +5,9 @@
 What predictable information does the complaint itself have?
 
 > Language - the actual content of the complaint
+
 > Location - Neighborhood, etc.
+
 > Complaint type
+
 > Street type
