@@ -60,7 +60,7 @@ class myThread (threading.Thread):
 
 def worker(start,complaint_df):
     for row in range(start,df.shape[0],8):
-        if row % 100 == 0 :
+        if row % 100 == 0 and row < df.shape[0]*0.9:
             print(f'Completed {row} downloads',end='\r')
         if complaint_df is None:   
             complaint_df = pd.read_csv(df.complaints[row]['url'])
