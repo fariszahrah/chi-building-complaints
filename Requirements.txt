@@ -2,4 +2,7 @@ requests
 sodapy
 Pandas
 tqdm
-
+numpy
+pyproj
+pyshp
+plotly

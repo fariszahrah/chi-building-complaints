@@ -1,2 +1,4 @@
 *.pkl
 complaint-env/*
+.mapbox_token
+
