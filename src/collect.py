@@ -1,3 +1,7 @@
+#!/bin/python3
+#Faris Zahrah 2/20/2020
+
+
 import pandas as pd
 from sodapy import Socrata
 from tqdm import tqdm

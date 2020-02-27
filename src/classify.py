@@ -1,3 +1,7 @@
+#!/bin/python3
+#Faris Zahrah 2/25/2020
+
+
 # This serves as an inital classification model for building complaints, 
 # with the target feature being whether the violation was enforced or not.
 # Can we predict enforcment based on building complaint featueres is the high
