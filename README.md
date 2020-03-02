@@ -1,4 +1,4 @@
-# chi-building-complaints
+#chi-building-complaints
 
 # How does the City of Chicago prioritize building complaint responses?
 
@@ -15,7 +15,7 @@ What predictable information does the complaint itself have?
 
 ### Install
 
-> pip3 install -r requirements.txt
+> pip3 install -r src/requirements.txt
 
 ## Models Tested 
 
