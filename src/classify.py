@@ -88,11 +88,12 @@ for c in categories:
 
 #seperating features from target
 df_t_features = df_t.drop('enforcement',axis=1)
+df_t_features.drop('tanks',axis=1,inplace=True)
 df_t_target = df_t[['enforcement']]
 
 
 #train test split, standard operation
-X_train, X_test, y_train, y_test =  train_test_split(df_t_features,df_t_target, test_size=0.2)
+X_train, X_test, y_train, y_test =  train_test_split(df_t_features,df_t_target, test_size=0.3)
 
 
 
@@ -117,10 +118,8 @@ print(f'Decision Tree Classifier Accuracy: {dt.score(X_test,y_test)}')
 
 
 
-
-
 ######## Random Forest Classifier Start ########
-clf = RandomForestClassifier(max_depth=15, random_state=0)
+clf = RandomForestClassifier(max_depth=12, random_state=0)
 clf.fit(X_train, y_train)
 prediction = clf.predict(X_test)
 
@@ -137,6 +136,15 @@ print(f'Random Forest Classifier Accuracy: {clf.score(X_test,y_test)}')
 ######## Random Forest Classifier Stop ########
 
 
+
+
+### printing feature importance  start ###
+print('\nFeature Importances:')
+d = dict(zip(clf.feature_importances_, df_t_features.columns))
+for elem in sorted(d.items(),reverse=True) :
+    print(f'{elem[1]}: {round(elem[0],6)} ')
+
+### printing feature importance stop ####
 
 
 

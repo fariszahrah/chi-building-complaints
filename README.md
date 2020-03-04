@@ -28,3 +28,7 @@ What predictable information does the complaint itself have?
 
 
 
+### Some interesting things to note
+
+
+> When we are not using the Convnet on the actual content of the complaint we are able to analyze the feature importances much easier.  A good thing to note for chicago is that the primary feature that indicates whether the city will enforce a complaint is whether or not the building has a permit(construction,demo,etc).  The CNN classifier outperforms the decsion trees, with a dropout of p=0.5
